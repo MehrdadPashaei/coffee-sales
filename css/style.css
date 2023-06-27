@@ -1,0 +1,242 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #EFEFEF;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+/*.container{*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+.head {
+    width: 100%;
+    height: 83px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #43281C;
+
+}
+
+.logo-img {
+    width: 26px;
+    height: 29px;
+    color: #FBF2C0;
+    margin-right: 8px;
+    margin-bottom: 2px;
+
+}
+
+.header-title {
+    color: #FBF2C0;
+    font-size: 2.73rem;
+
+}
+
+.main {
+    width: 100%;
+    padding: 30px;
+    display: grid;
+    row-gap: 40px;
+    column-gap: 35px;
+    margin: 0 auto;
+    grid-template-areas:
+    "order payment"
+    "total total";
+    grid-template-columns: 1fr 1fr;
+}
+
+.order {
+    grid-area: order;
+
+}
+
+.payment {
+    grid-area: payment;
+
+}
+
+.total {
+    grid-area: total;
+
+}
+.order-title{
+    /*background-color: #43281C;*/
+    margin-bottom: 7px;
+}
+
+.box {
+    width: 100%;
+    background-color: #EEE1D5;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
+    padding: 15px 12px 25px 12px;
+    margin-bottom: 22px;
+    margin-left: 3px;
+
+}
+
+.box-title {
+    font-size: 1.8rem;
+    font-weight: normal;
+    color: #885A2D;
+    padding: 20px 5px 10px 5px;
+}
+
+.items {
+    list-style: none;
+    /*padding: 0;*/
+    /*margin: 0;*/
+
+}
+
+.item {
+    border-bottom: 2px solid #DDB892;
+    padding: 10px 5px;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-areas:
+    "number title  price"
+    "number option price";
+    row-gap: 12px;
+
+
+
+}
+
+.item:last-child {
+    border-bottom: none;
+
+
+}
+
+.item-number {
+    grid-area: number;
+    font-size: 1.8rem;
+
+
+}
+
+.item-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    grid-area: title;
+
+}
+
+.item-price {
+    font-size: 1.8rem;
+    grid-area: price;
+    font-weight: bold;
+
+
+}
+
+.item-option-list {
+    grid-area: option;
+    list-style: none;
+    font-weight: 400;
+    color: #B08968;
+    margin: 0;
+    padding: 0;
+
+}
+
+.item-option {
+    margin-bottom: 5px;
+    font-size: 1.6rem;
+    font-weight: lighter;
+
+}
+
+.input-group {
+    position: relative;
+    margin: 5px 5px 15px 5px;
+
+}
+
+.user-input {
+    background-color: rgba(0,0,0,0);
+    border: 2px #885a2d solid;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 100px;
+    width: 100%;
+    text-indent: 18px;
+    font-size: 1.8rem;
+
+}
+
+.user-input-label {
+    color: #885a2d;
+    background-color: #eee1d5;
+    font-size: 1.3rem;
+    position: absolute;
+    left: 26px;
+    top: -9px;
+    padding: 0 2px;
+}
+
+.short-input {
+    max-width: 225px;
+
+
+}
+
+.total {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.totals-table {
+    width: 100%;
+    max-width: 565px;
+    margin-bottom: 30px;
+    margin-top: 0;
+    /*background-color: #43281C;*/
+}
+
+.totals-table td {
+    padding: 2px 10px 20px 10px ;
+    font-size: 1.8rem;
+
+}
+
+.totals-table td:last-child {
+    text-align: right;
+
+
+}
+
+.final-totals {
+    font-weight: bold;
+    font-size: 1.8rem;
+
+
+}
+
+.checkout {
+    background-color: #deb993;
+    border: none;
+    padding: 12px 30px;
+    width: 100%;
+    border-radius: 100px;
+    font-size: 1.8rem;
+
+}
